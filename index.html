@@ -1,14 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sakura Ramen</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: "Raleway", sans-serif;
+            font-size: 24px;
+            color: #000000;
+        }
+
+        h1 {
+            font-family: "Raleway", sans-serif;
+            font-weight: bold;
+            font-size: 96px;
+            color:white;
+        }
+
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-weight: bold;
+            font-size: 80px;
+            color: #9F0908;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: "Economica", sans-serif;
+            font-weight: bold;
+            font-size: 56px;
+        }
+
+        .economica {
+            font-family: "Economica", sans-serif;
+            font-weight: bold;
+        }
+
+        .raleway {
+            font-family: "Raleway", sans-serif;
+            font-weight: 200;
+        }
+
+        .hero-container {
+            height: 100vh;
+            background-image: url('/img/1_hero/JPG/hero_bg.jpg');
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:white
+        }
+
+        .navigation-bar {
+            position:absolute;
+            left: 0;
+            top: 8px;
+            right: 0;
+            bottom: 0;
+            padding-left:120px;
+            padding-right:120px;
+            height: 112px; 
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sakura-logo {
+            height: 64px;
+            width: 64px;
+        }
+
+        .menu {
+            height: fit-content;
+        }
+
+        .menu a {
+            color:white;
+            text-decoration: none;
+            font-family: "Raleway", sans-serif;
+            font-size: 24px;
+            padding:4px;
+        }
+
+        .cta {
+            background-color: #9F0908;
+            border-radius:8px;
+            border: 1px solid;
+
+        }
+        .cta:hover{
+            background-color: #e50808;
+        }
+        
+        .hero-section {
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 64px;
+        }
+
+        .hto {
+            display: flex;
+
+            flex-direction: column;
+
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .card{
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 128px;
+            margin-bottom: 16px;
+        }
+
+        .card span {
+            font-size: 56px;
+            text-align: center;
+        }
+
+        .order-section{
+            background-image: url('/img/3_section_our_menu/JPG/section_our_menu_bg.jpg');
+        }
+
+        .dish-container {
+            display:flex;
+            flex-direction: column;
+        }
+
+        .dish-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .dish-card {
+            display: flex;
+            justify-content: space-around;
+
+            margin-bottom: 28px;
+            margin-top: 28px;
+        }
+
+        .dish-card img {
+            width: 352px;
+            height: 352px;
+        }
+
+        .dish-info {
+            font-family: "Raleway", sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+            color: #675E54;
+            margin-right: 00px;
+
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            background-color: #0A141E;
+        }
+
+    </style>
 </head>
+
 <body>
-    <div class="menu"></div>
-    <div class="main-contaier"></div>
-    <div class="footer"></div>
-    
+
+    <div class="navigation-bar">
+        <img class="sakura-logo" src="img/1_hero/PNG/sakura_logo.png" alt="">
+        <div class="menu">
+            <a href="">MENU</a>
+            <a href="">LOCATIONS</a>
+            <a href="">ABOUT</a>
+            <a class="cta" href="tel:0176 54564534"> <img style="height: 20px; width: 20px;" src="/img/1_hero/PNG/phone.png" alt="">0176 54564534</a>
+        </div>
+    </div>
+
+    <div class="hero-container">
+        <h1>SAKURA RAMEN</h1>
+        <span class="raleway">THE BEST RAMEN IN TOWN</span>
+    </div>
+        
+    <h2>HOW TO ORDER</h2>
+
+    <div class="hto">
+        
+        <div class="card-container">
+            <div class="card">
+                <img src="/img/2_section_how_to_order/PNG/noodle.png" alt="">
+                <span class="economica">
+                    Pick your<br>noodle
+                </span>
+            </div>
+            <div class="card">
+                <img src="/img/2_section_how_to_order/PNG/broth.png" alt="">
+                <span class="economica">
+                    Pick your<br>broth
+                </span>
+            </div>
+            <div class="card">
+                <img src="/img/2_section_how_to_order/PNG/egg.png" alt="">
+                <span class="economica">
+                    Add your<br>toppings
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <h2 style="padding-top:120px;">OUR MENU</h2>
+        <div class="dish-container">
+            <div class="dish-card">
+                <img src="img/3_section_our_menu/Png/R1.png" alt="">
+                <div>
+                    <h3>Tonkotsu Ramen</h3>
+                    <div class="dish-info">
+                        <span>Chicken </span>
+                        <span>11.95</span>
+                    </div>
+                    <div class="dish-info">
+                        <span>Beef</span>
+                        <span>12.95</span>
+                    </div>
+                    <div class="dish-info">
+                        <span>Shrimp</span>
+                        <span>13.95</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="img/3_section_our_menu/Png/R2.png" alt="">
+                <div>
+                    <h3>Spicy Miso Ramenn</h3>
+                    <div class="dish-info">
+                        <span>Chicken </span>
+                        <span>11.95</span>
+                    </div>
+                    <div class="dish-info">
+                        <span>Beef</span>
+                        <span>12.95</span>
+                    </div>
+                    <div class="dish-info">
+                        <span>Shrimp</span>
+                        <span>13.95</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="img/3_section_our_menu/Png/R3.png" alt="">
+                <div>
+                    <h3>Shio Ramen</h3>
+                    <div class="dish-info">
+                        <span>Chicken </span>
+                        <span>11.95</span>
+                    </div>
+                    <div class="dish-info">
+                        <span>Beef</span>
+                        <span>12.95</span>
+                    </div>
+                    <div class="dish-info">
+                        <span>Shrimp</span>
+                        <span>13.95</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
