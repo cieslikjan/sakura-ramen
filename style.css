@@ -160,13 +160,12 @@ header img {
 }
 
 .address {
-    margin-top: 8px;
+    margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 }
 
 .address img {
