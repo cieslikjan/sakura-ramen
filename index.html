@@ -11,110 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/style.css">
+
     <style>
-        body {
-            margin: 0px;
-            font-family: "Raleway", sans-serif;
-            font-size: 24px;
-            color: #000000;
-        }
-
-        h1 {
-            font-family: "Raleway", sans-serif;
-            font-weight: bold;
-            font-size: 96px;
-            color:white;
-        }
-
-        h2 {
-            font-family: "Raleway", sans-serif;
-            font-weight: bold;
-            font-size: 80px;
-            color: #9F0908;
-            text-align: center;
-
-            margin-bottom: 0px;;
-        }
-
-        h3 {
-            font-family: "Economica", sans-serif;
-            font-weight: bold;
-            font-size: 56px;
-        }
-
-        .economica {
-            font-family: "Economica", sans-serif;
-            font-weight: bold;
-        }
-
-        .raleway {
-            font-family: "Raleway", sans-serif;
-            font-weight: 200;
-        }
-
-        .hero-container {
-            height: 100vh;
-            background-image: url('/img/1_hero/JPG/hero_bg.jpg');
-            background-size: cover;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color:white
-        }
-
-        .navigation-bar {
-            position:absolute;
-            left: 0;
-            top: 8px;
-            right: 0;
-            bottom: 0;
-            padding-left:120px;
-            padding-right:120px;
-            height: 112px; 
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .sakura-logo {
-            height: 64px;
-            width: 64px;
-        }
-
-        .menu {
-            height: fit-content;
-        }
-
-        .menu a {
-            color:white;
-            text-decoration: none;
-            font-family: "Raleway", sans-serif;
-            font-size: 24px;
-            padding:4px;
-        }
-
-        .cta {
-            background-color: #9F0908;
-            border-radius:8px;
-            border: 1px solid;
-
-        }
-        .cta:hover{
-            background-color: #e50808;
-        }
-        
-        .hero-section {
-            color:white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 64px;
-        }
-
         .hto {
             display: flex;
 
@@ -230,21 +129,21 @@
 
 <body>
 
-    <div class="navigation-bar">
-        <img class="sakura-logo" src="img/1_hero/PNG/sakura_logo.png" alt="">
-        <div class="menu">
-            <a href="">MENU</a>
-            <a href="">LOCATIONS</a>
-            <a href="">ABOUT</a>
-            <a class="cta" href="tel:0176 54564534"> <img style="height: 20px; width: 20px;" src="/img/1_hero/PNG/phone.png" alt="">0176 54564534</a>
-        </div>
-    </div>
+    <div class="atf">
+        <header>
+            <img src="img/1_hero/PNG/sakura_logo.png" alt="">
+            <nav class="hide-mobile">
+                <a href="#" class="nav-link">MENU</a>
+                <a href="#" class="nav-link">LOCATIONS</a>
+                <a href="#" class="nav-link">ABOUT</a>
+                <a class="nav-btn"href="tel:0176 54564534"> <img style="height: 20px; width: 20px;" src="/img/1_hero/PNG/phone.png" alt="">0176 54564534</a>
+            </nav>
+        </header>
 
-    <div class="hero-container">
         <h1>SAKURA RAMEN</h1>
         <span class="raleway">THE BEST RAMEN IN TOWN</span>
     </div>
-        
+
     <h2>HOW TO ORDER</h2>
 
     <div class="hto">
