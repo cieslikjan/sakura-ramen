@@ -159,6 +159,46 @@ header img {
     justify-content: space-between;
 }
 
+.address {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 64px;
+}
+
+.address img {
+    width: 32px;
+}
+
+.map {
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+.footer {
+    background-color: #0A141E;
+    height:140px;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 44px;
+}
+
+.footer-icons {
+    height:40px;
+    width: 40px;
+
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 
 @media (max-width: 790px) {
     .hide-mobile {
